@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <h4>{{ user.name }}</h4>
+    <img src="{{ user.image_url }}" />
+    <p>{{ user.email }}</p>
+</div>
+<h3>Posts <a href="">(+)</a></h3>
+<div class="container">
+    {% for post in posts %}
+        <div class="item1">
+            <h4>{{ user.name }}</h4>
+            <h5>{{ post.subject }}</h5>
+            <img src="{{ post.image_url }}" />
+            <p>{{ post.text }}</p>
+            <p>Comment <a href="">(+)</a></p>
+        </div>
+    {% endfor %}
+</div>
+
+
+
+{% endblock %}

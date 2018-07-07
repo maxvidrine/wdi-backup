@@ -1,0 +1,21 @@
+//1. Use boilerplate
+//2. Add meta tag for viewport
+//3. Add CSS Styles
+//4. Add some semantic HTML
+//5. play with some fonts
+//6. play with flex
+//7. demonstrate float and clearfix
+//8. demonstrate bootstrap's grid system
+//9. media queries
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Monument</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/ss?family=Lato:400|Raleway:600">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js" defer></script>
+</head>

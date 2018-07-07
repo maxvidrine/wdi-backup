@@ -1,0 +1,17 @@
+{% load staticfiles %}
+
+<html>
+	<head>
+		<title>Tunr</title>
+		<link rel="stylesheet" href="{% static 'css/tunr.css' %}">
+	</head>
+	<body>
+		<header></header>
+		<hr />
+		{% block content %}
+		{% endblock %}
+		<footer>
+			<p>I am a footer</p>
+		</footer>
+	</body>
+</html>

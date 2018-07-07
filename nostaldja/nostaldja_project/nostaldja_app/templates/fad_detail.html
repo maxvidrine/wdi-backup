@@ -1,0 +1,10 @@
+<h2>{{ fad.decade.start_year }} <a href="{% url 'decade_detail' pk=fad.decade.pk %}">(edit)</a></h2>
+
+<h3>Fads <a href="{% url 'fad_list' %}">(+)</a></h3>
+<ul>
+        <li>
+            <p>{{ fad.name }}-{{ fad.album }}</p>
+            <img src="{{ fad.image_url }}" />
+            <p>{{ fad.description }}</p>
+        </li>
+</ul>

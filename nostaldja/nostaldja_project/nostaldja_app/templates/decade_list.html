@@ -1,0 +1,9 @@
+<h2>Decades <a href="">(+)</a></h2>
+<h4><a href="{% url 'fad_list' %}">Fads</a></h4>
+<ul>
+    {% for decade in decades %}
+        <li>
+            <a href="{% url 'decade_detail' pk=decade.pk %}">{{ decade.start_year }}</a>
+        </li>
+    {% endfor %}
+</ul>

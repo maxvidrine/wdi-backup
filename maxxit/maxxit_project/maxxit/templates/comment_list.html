@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h3>Commentss <a href="{% url 'comment_list' %}">(+)</a></h3>
+<div class="container">
+    {% for comment in comments %}
+        <div class="item1">
+            <h4>{{ comment.user.name }}</h4>
+            <h5>{{ comment.post.subject }}</h5>
+            <p>{{ comment.text }}</p>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}

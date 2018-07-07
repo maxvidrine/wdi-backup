@@ -1,0 +1,95 @@
+* {
+	font-family: sans-serif;
+}
+
+body {
+	background-color: pink;
+}
+
+header, footer {
+	font-family: fantasy;
+	background-color: cornflowerblue;
+	display: flex;
+	flex-direction: column;
+}
+
+header h1 {
+	font-family: cursive;
+
+}
+
+header nav {
+	background-color: blue;
+	color: white;
+}
+
+header > a {
+	display: none;
+}
+
+
+span {
+	color: white;
+}
+
+a:hover {
+	color: chartreuse;
+
+}
+
+a {
+	color: white;
+}
+
+a:active{
+	background-color: yellow;	
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+}
+
+div {
+	padding: 5%;
+}
+
+section {
+	background-color: hotpink;
+	margin: 5%;
+	padding: 2%;
+	width: auto;
+	display: flex;
+	flex-direction: row;
+}
+
+.fab {
+	font-size: 3em;
+}
+
+@media screen and (max-width:700px) {
+
+	body {
+		background-color: black;
+	}
+
+	img {
+		width: 70%;
+	}
+
+section {
+	flex-direction: column;
+}
+
+header > nav {
+	display: none;
+}
+
+header > a {
+	background-color: blue;
+	color: white;
+	display: inline-block;
+	float: right;
+}
+
+}

@@ -1,0 +1,308 @@
+/* CSS Reset */
+*, html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p,
+a, a:hover, button, img, i, ol, ul, li,
+form,
+article, aside, footer, header,
+menu, nav, section, .navbar, .navbar-toggler {
+	margin: 0;
+	padding: 0;
+    border: 0;
+    line-height: 0;
+    text-decoration: none;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: inherit;
+    background-color: transparent;
+    /* border: 1px solid black; */
+}
+
+button {
+    outline: none !important;
+}
+
+/* Major Formatting */
+body {
+    color: gray;
+}
+
+header {
+    background: url("../images/tidepools.jpg") no-repeat center top fixed;
+    background-size: 100%;
+    height: 100vh;
+}
+
+header, section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header, footer {
+    color: white;
+}
+
+footer {
+    width: 100%;
+    height: 7em;
+    background: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.column-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.single-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    padding: 2.5% 2.5% 0;
+    height: 95vh;
+}
+
+h1 {
+    font-size: 8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    margin-left: .5em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3em;
+    line-height: 0;
+    font-weight: 600;
+    padding: .5em 3em;
+}
+
+h3, .form-control {
+    font-size: 1.35em;
+    line-height: 2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h4 {
+    font-size: 1.15em;
+    line-height: 1.55em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h5 {
+    font-size: 1.2em;
+    line-height: 3em;
+    font-weight: 700;
+}
+
+h6 {
+    font-size: 1em;
+    line-height: 2em;
+    font-weight: 700;
+		padding-bottom: 1em;
+}
+
+li {
+	line-height: 2em;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+/* Menu, Buttons and Icons */
+
+i {
+    padding: 0 1.4em;
+}
+
+.fa-chevron-down {
+    padding: .5em;
+}
+
+#menu-big {
+    width: 100%
+}
+
+#menu-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 15%;
+}
+
+#menu-small {
+    display: none;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+a:hover, button:hover {
+    color: aquamarine;
+}
+
+.highlighted {
+    color: peachpuff !important;
+}
+
+/* Specific Formatting Details */
+
+article {
+    padding: 0 5%;
+}
+
+#porfolio {
+    display: flex;
+    flex-direction: column;
+    /* margin: 0 30%; */
+}
+
+#contact {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2.5%;
+}
+
+.invert {
+    color: white;
+    background-color: gray;
+}
+
+#myCarousel {
+    z-index: 0;
+    margin: 0 20%;
+}
+
+img {
+    width: 12.5em;
+    filter: grayscale();
+}
+
+/* Contact Form */
+
+.container {
+	width: 80%;
+	box-sizing: border-box;
+
+}
+
+.text {
+	height: 2em;
+}
+
+.textarea {
+	height: 8em;
+}
+
+.form-control {
+    margin: .5em 0;
+}
+
+.button {
+    background-color: aquamarine;
+    color: white;
+    /* margin: .5em; */
+}
+
+.hidden {
+	display: none;
+}
+
+/* Media Queries */
+
+@media (max-width: 1000px) {
+    header {
+        height: 75vh;
+    }
+
+    #menu-container {
+        margin: 0 7.5%;
+    }
+
+    h1 {
+        font-size: 5em;
+    }
+
+    #myCarousel {
+        margin: 0 10%;
+    }
+
+}
+
+@media (max-width: 750px) {
+
+    header {
+        height: 60vh;
+    }
+
+    #menu-big {
+        display: none;
+    }
+
+    #menu-small {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding: .75em;
+    }
+
+    aside {
+        display: none;
+    }
+
+    #myCarousel {
+        margin: 0 5%;
+    }
+
+}
+
+@media (max-width: 650px) {
+    header {
+        height: 55vh;
+    }
+}
+
+@media (max-width: 500px) {
+
+    header {
+        height: 50vh;
+    }
+
+    #menu-big {
+        display: none;
+    }
+
+    #menu-small {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding: .35em .5em;
+    }
+
+    .column-container {
+        flex-direction: column;
+    }
+}

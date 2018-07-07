@@ -1,0 +1,30 @@
+<h2>Fads <a href="">(+)</a></h2>
+<h4><a href="{% url 'decade_list' %}">Decades</a></h4>
+<ul>
+    {% for fad in fads %}
+        <li>
+            <a href="{% url 'fad_detail' pk=fad.pk %}">{{ fad.name }}</a>
+            <img src="{{ fad.image_url }}" />
+            <p>{{ fad.description }}</p>
+            <a href="{% url 'decade_detail' pk=fad.decade.pk %}"><p>{{ fad.decade.start_year }}</p></a>
+        </li>
+    {% endfor %}
+</ul>
+
+<div class="pagination">
+    <span class="step-links">
+        {% if fads.has_previous %}
+            <a href="?page=1">&laquo; first</a>
+            <a href="?page={{ fads.previous_page_number }}">previous</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ fads.number }} of {{ fads.paginator.num_pages }}.
+        </span>
+
+        {% if fads.has_next %}
+            <a href="?page={{ fads.next_page_number }}">next</a>
+            <a href="?page={{ fads.paginator.num_pages }}">last &raquo;</a>
+        {% endif %}
+    </span>
+</div>

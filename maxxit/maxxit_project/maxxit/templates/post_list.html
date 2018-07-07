@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h3>Posts <a href="{% url 'post_create' %}">(+)</a></h3>
+<div class="container">
+		{% for post in posts %}
+				<div class="item1">
+						<h4>{{ post.user.name }}</h4>
+						<h5>{{ post.subject }}</h5>
+						<img src="{{ post.image_url }}" />
+						<p>{{ post.text }}</p>
+							{% for comment in post_comments %}
+								<div class="item2">
+									<h4>{{ comment.user.name }}
+									<p>{{ comment.text }}</p>
+								</div>
+							{% endfor %}
+						<p>Comment <a href="{% url 'comment_create' %}">(+)</a></p>
+				</div>
+		{% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h3>Users <a href="{% url 'user_list' %}">(+)</a></h3>
+<div class="container">
+    {% for user in users %}
+        <div class="item1">
+            <h4><a href={% url 'user_detail' pk=user.pk %}>{{ user.name }}</a></h4>
+            <img src="{{ user.image_url }}" />
+            <p>{{ user.email }}</p>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}

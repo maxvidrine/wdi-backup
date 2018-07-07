@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)https://git.generalassemb.ly/sf-wdi-45/js-functions -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+
+<meta content="origin-when-cross-origin" name="referrer">
+
+  <link crossorigin="anonymous" href="./sf-wdi-45_js-functions_files/frameworks-7a12427f1445.css" integrity="sha512-ehJCfxRFqU8Lt/+Hwc4cvp41sPisCp1U2d03SlbM3aKVZcxiYDTVmBsAtOVgAtZ912JFOebwrPXr/JcDNd6bGA==" media="all" rel="stylesheet">
+  <link crossorigin="anonymous" href="./sf-wdi-45_js-functions_files/github-f02946269008.css" integrity="sha512-8ClGJpAIbu0+gXheVz+JUoqh8I0jNUViRYNZnCVJQNtKh1J7BKa58jkAUrZys+E4lHkPzD3pJnhOt4MJFnT9kg==" media="all" rel="stylesheet">
+  
+  
+  
+  
+
+  <meta name="viewport" content="width=device-width">
+  
+  <title>sf-wdi-45/js-functions</title>
+  <link rel="search" type="application/opensearchdescription+xml" href="https://git.generalassemb.ly/opensearch.xml" title="GitHub">
+  <link rel="fluid-icon" href="https://git.generalassemb.ly/fluidicon.png" title="GitHub">
+  <meta property="fb:app_id" content="1401488693436528">
+
+    
+    <meta content="https://git.generalassemb.ly/avatars/u/10640?s=400" property="og:image"><meta content="GitHub Enterprise" property="og:site_name"><meta content="object" property="og:type"><meta content="sf-wdi-45/js-functions" property="og:title"><meta content="https://git.generalassemb.ly/sf-wdi-45/js-functions" property="og:url"><meta content="Contribute to js-functions development by creating an account on GitHub." property="og:description">
+
+  <link rel="assets" href="https://git.generalassemb.ly/">
+  <link rel="web-socket" href="wss://git.generalassemb.ly/_sockets/VjI6MTkzNDc6OGM5YmJmNDlhZTFiOWU5YWFkZDIyZTM2YjI4M2Q1MzRhYWJiOTU0Nzc1ODg4M2NlYWJjMmRiZThhMTkyNGRlNg==--4e0128ccecd6d5914f5c0731ba268af307c63877">
+  <meta name="pjax-timeout" content="1000">
+  <link rel="sudo-modal" href="https://git.generalassemb.ly/sessions/sudo_modal">
+  <meta name="request-id" content="6f845697-479d-4a2e-bf0d-37aaa5c6edcb" data-pjax-transient="">
+  
+
+  <meta name="selected-link" value="repo_source" data-pjax-transient="">
+
+  
+
+<meta content="https://git.generalassemb.ly/hydro_browser_events" name="hydro-events-url">
+<meta content="/&lt;user-name&gt;/&lt;repo-name&gt;" data-pjax-transient="true" name="analytics-location">
+
+
+
+
+  <meta class="js-ga-set" name="dimension1" content="Logged In">
+
+
+  
+
+      <meta name="hostname" content="git.generalassemb.ly">
+    <meta name="user-login" content="maxvidrine">
+
+
+
+  <meta name="html-safe-nonce" content="0ccbca39bf61ae5b0961ea4fa4da4c1c369c212e">
+
+  <meta http-equiv="x-pjax-version" content="5d2df60f4469c3c4cec5cdc48c7499d0">
+  
+
+      <link href="https://git.generalassemb.ly/sf-wdi-45/js-functions/commits/master.atom?token=AAApuzjj7hZb1CrV36nqa0g_aN9LVGZHks64_0ofwA%3D%3D" rel="alternate" title="Recent Commits to js-functions:master" type="application/atom+xml">
+
+  <meta name="description" content="Contribute to js-functions development by creating an account on GitHub.">
+  <meta name="go-import" content="git.generalassemb.ly/sf-wdi-45/js-functions git https://git.generalassemb.ly/sf-wdi-45/js-functions.git">
+
+  
+
+
+    <link rel="canonical" href="https://git.generalassemb.ly/sf-wdi-45/js-functions" data-pjax-transient="">
+
+
+
+  <link rel="mask-icon" href="https://git.generalassemb.ly/pinned-octocat.svg" color="#000000">
+  <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://git.generalassemb.ly/favicon-ent.ico">
+
+<meta name="theme-color" content="#1e2327">
+
+
+  <meta name="u2f-support" content="true">
+
+<link rel="manifest" href="https://git.generalassemb.ly/manifest.json" crossorigin="use-credentials">
+
+  </head>
+
+  <body class="logged-in enterprise env-production emoji-size-boost">
+    
+
+  <div class="position-relative js-header-wrapper ">
+    <a href="https://git.generalassemb.ly/sf-wdi-45/js-functions#start-of-content" tabindex="1" class="bg-black text-white p-3 show-on-focus js-skip-to-content">Skip to content</a>
+    <div id="js-pjax-loader-bar" class="pjax-loader-bar"><div class="progress"></div></div>
+
+    
+    
+    
+
+
+
+        
+<header class="Header  f5" role="banner">
+  <div class="d-flex px-3 flex-justify-between container-lg">
+    <div class="d-flex flex-justify-between ">
+      <div class="">
+        <a class="header-logo-invertocat" href="https://git.generalassemb.ly/" data-hotkey="g d" aria-label="Homepage" data-ga-click="Header, go to dashboard, icon:logo">
+  <svg aria-hidden="true" class="octicon octicon-mark-github" height="32" version="1.1" viewBox="0 0 16 16" width="32"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+    <span class="header-logo-subbrand d-none d-md-inline">Enterprise</span>
+</a>
+
+      </div>
+
+    </div>
+
+    <div class="HeaderMenu d-flex flex-justify-between flex-auto">
+      <div class="d-flex">
+            <div class="">
+              <div class="header-search scoped-search site-scoped-search js-site-search" role="search">
+  <!-- '"` --><!-- </textarea></xmp> --><form accept-charset="UTF-8" action="https://git.generalassemb.ly/sf-wdi-45/js-functions/search" class="js-site-search-form" data-scoped-search-url="/sf-wdi-45/js-functions/search" data-unscoped-search-url="/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"></div>
+    <label class="form-control header-search-wrapper js-chromeless-input-container">
+        <a href="https://git.generalassemb.ly/sf-wdi-45/js-functions" class="header-search-scope no-underline">This repository</a>
+      <input type="text" class="form-control header-search-input js-site-search-focus js-site-search-field is-clearable" data-hotkey="s" name="q" value="" placeholder="Search" aria-label="Search this repository" data-unscoped-placeholder="Search GitHub" data-scoped-placeholder="Search" autocapitalize="off">
+        <input type="hidden" class="js-site-search-type-field" name="type">
+    </label>
+</form></div>
+
+            </div>
+
+          <ul class="d-flex pl-2 flex-items-center text-bold list-style-none" role="navigation">
+            <li>
+              <a href="https://git.generalassemb.ly/pulls" aria-label="Pull requests you created" class="js-selected-navigation-item HeaderNavlink px-2" data-ga-click="Header, click, Nav menu - item:pulls context:user" data-hotkey="g p" data-selected-links="/pulls /pulls/assigned /pulls/mentioned /pulls">
+                Pull requests
+</a>            </li>
+            <li>
+              <a href="https://git.generalassemb.ly/issues" aria-label="Issues you created" class="js-selected-navigation-item HeaderNavlink px-2" data-ga-click="Header, click, Nav menu - item:issues context:user" data-hotkey="g i" data-selected-links="/issues /issues/assigned /issues/mentioned /issues">
+                Issues
+</a>            </li>
+            <li>
+              <a href="https://git.generalassemb.ly/explore" class="js-selected-navigation-item HeaderNavlink px-2" data-ga-click="Header, click, Nav menu - item:explore" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship showcases showcases_search showcases_landing /explore">
+                Explore
+</a>            </li>
+          </ul>
+      </div>
+
+      <div class="d-flex">
+        
+<ul class="user-nav d-flex flex-items-center list-style-none" id="user-links">
+  <li class="dropdown js-menu-container">
+    <span class="d-inline-block  px-2">
+      
+
+    </span>
+  </li>
+
+  <li class="dropdown js-menu-container">
+    <details class="dropdown-details details-reset js-dropdown-details d-flex px-2 flex-items-center">
+      <summary class="HeaderNavlink" aria-label="Create new…" data-ga-click="Header, create new, icon:add">
+        <svg aria-hidden="true" class="octicon octicon-plus float-left mr-1 mt-1" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 9H7v5H5V9H0V7h5V2h2v5h5z"></path></svg>
+        <span class="dropdown-caret mt-1"></span>
+      </summary>
+
+      <ul class="dropdown-menu dropdown-menu-sw">
+        
+<a class="dropdown-item" href="https://git.generalassemb.ly/new" data-ga-click="Header, create new repository">
+  New repository
+</a>
+
+
+<a class="dropdown-item" href="https://git.generalassemb.ly/gist" data-ga-click="Header, create new gist">
+  New gist
+</a>
+
+  <a class="dropdown-item" href="https://git.generalassemb.ly/organizations/new" data-ga-click="Header, create new organization">
+    New organization
+  </a>
+
+
+
+  <div class="dropdown-divider"></div>
+  <div class="dropdown-header">
+    <span title="sf-wdi-45/js-functions">This repository</span>
+  </div>
+    <a class="dropdown-item" href="https://git.generalassemb.ly/sf-wdi-45/js-functions/issues/new" data-ga-click="Header, create new issue">
+      New issue
+    </a>
+
+      </ul>
+    </details>
+  </li>
+
+  <li class="dropdown js-menu-container">
+
+    <details class="dropdown-details details-reset js-dropdown-details d-flex pl-2 flex-items-center">
+      <summary class="HeaderNavlink name mt-1" aria-label="View profile and more" data-ga-click="Header, show menu, icon:avatar">
+        <img alt="@maxvidrine" class="avatar float-left mr-1" src="./sf-wdi-45_js-functions_files/10683" height="20" width="20">
+        <span class="dropdown-caret"></span>
+      </summary>
+
+      <ul class="dropdown-menu dropdown-menu-sw">
+        <li class="dropdown-header header-nav-current-user css-truncate">
+          Signed in as <strong class="css-truncate-target">maxvidrine</strong>
+        </li>
+
+        <li class="dropdown-divider"></li>
+
+        <li><a class="dropdown-item" href="https://git.generalassemb.ly/maxvidrine" data-ga-click="Header, go to profile, text:your profile">
+          Your profile
+        </a></li>
+        <li><a class="dropdown-item" href="https://git.generalassemb.ly/maxvidrine?tab=stars" data-ga-click="Header, go to starred repos, text:your stars">
+          Your stars
+        </a></li>
+          <li><a class="dropdown-item" href="https://git.generalassemb.ly/gist" data-ga-click="Header, your gists, text:your gists">Your gists</a></li>
+
+        <li class="dropdown-divider"></li>
+
+        <li><a class="dropdown-item" href="https://help.github.com/enterprise/2.13/user" data-ga-click="Header, go to help, text:help">
+          Help
+        </a></li>
+
+        <li><a class="dropdown-item" href="https://git.generalassemb.ly/settings/profile" data-ga-click="Header, go to settings, icon:settings">
+          Settings
+        </a></li>
+
+        <li><!-- '"` --><!-- </textarea></xmp> --><form accept-charset="UTF-8" action="https://git.generalassemb.ly/logout" class="logout-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="064YE1V7njRcD7RKkGsWF8J1y7qD4IZ8/lXxQvsEEsU2u+oIjawenHzu+lXGuqoadYYdjX8nxdJWPc2WTgC8Sg=="></div>
+          <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
+            Sign out
+          </button>
+        </form></li>
+      </ul>
+    </details>
+  </li>
+</ul>
+
+
+
+        <!-- '"` --><!-- </textarea></xmp> --><form accept-charset="UTF-8" action="https://git.generalassemb.ly/logout" class="sr-only right-0" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="gZaofX9VF3fcsiWnqObBW9r77XS0z1OF0sF6BzyZ+aJkg1pmp4KX3/xTa7j+N31WbQg7Q0gIECt6qUbTiZ1XLQ=="></div>
+          <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
+            Sign out
+          </button>
+</form>      </div>
+    </div>
+  </div>
+</header>
+
+      
+<div class="flash flash-full js-notice flash-warn">
+<div class="container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>Scheduled Maintenance: 05:30-06:00 EST, 10th May 2018</p>
+
+</div>
+</div>
+
+  </div>
+
+  <div id="start-of-content" class="show-on-focus"></div>
+
+    <div id="js-flash-container">
+</div>
+
+
+
+  <div role="main" class="application-main ">
+        <div itemscope="" itemtype="http://schema.org/SoftwareSourceCode" class="">
+    <div id="js-repo-pjax-container" data-pjax-container="">
+      
+
+
+
+  
+
+
+
+  <div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav  ">
+    <div class="repohead-details-container clearfix container">
+
+      <ul class="pagehead-actions">
+  <li>
+        <!-- '"` --><!-- </textarea></xmp> --><form accept-charset="UTF-8" action="https://git.generalassemb.ly/notifications/subscribe" class="js-social-container" data-autosubmit="true" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="BNAcncGFF1A8H+6ba25TKaQ61CDAfvy+zC9B0Gu2aPz+i/XsQks0i/LCSf9o+3pOzdPzQ4euWYbHuHMIwPqB9Q=="></div>      <input class="form-control" id="repository_id" name="repository_id" type="hidden" value="127426">
+
+        <div class="select-menu js-menu-container js-select-menu">
+          <a href="https://git.generalassemb.ly/sf-wdi-45/js-functions/subscription" class="btn btn-sm btn-with-count select-menu-button js-menu-target" role="button" aria-haspopup="true" aria-expanded="false" aria-label="Toggle repository notifications menu" data-ga-click="Repository, click Watch settings, action:files#disambiguate">
+            <span class="js-select-button">
+                <svg aria-hidden="true" class="octicon octicon-eye" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"></path></svg>
+                Watch
+            </span>
+          </a>
+          <a class="social-count js-social-count" href="https://git.generalassemb.ly/sf-wdi-45/js-functions/watchers" aria-label="0 users are watching this repository">
+            0
+          </a>
+
+        <div class="select-menu-modal-holder">
+          <div class="select-menu-modal subscription-menu-modal js-menu-content">
+            <div class="select-menu-header js-navigation-enable" tabindex="-1">
+              <svg aria-label="Close" class="octicon octicon-x js-menu-close" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"></path></svg>
+              <span class="select-menu-title">Notifications</span>
+            </div>
+
+              <div class="select-menu-list js-navigation-container" role="menu">
+
+                <div class="select-menu-item js-navigation-item selected" role="menuitem" tabindex="0">
+                  <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+                  <div class="select-menu-item-text">
+                    <input checked="checked" id="do_included" name="do" type="radio" value="included">
+                    <span class="select-menu-item-heading">Not watching</span>
+                    <span class="description">Be notified when participating or @mentioned.</span>
+                    <span class="js-select-button-text hidden-select-button-text">
+                      <svg aria-hidden="true" class="octicon octicon-eye" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"></path></svg>
+                      Watch
+                    </span>
+                  </div>
+                </div>
+
+                <div class="select-menu-item js-navigation-item " role="menuitem" tabindex="0">
+                  <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+                  <div class="select-menu-item-text">
+                    <input id="do_subscribed" name="do" type="radio" value="subscribed">
+                    <span class="select-menu-item-heading">Watching</span>
+                    <span class="description">Be notified of all conversations.</span>
+                    <span class="js-select-button-text hidden-select-button-text">
+                      <svg aria-hidden="true" class="octicon octicon-eye" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"></path></svg>
+                        Unwatch
+                    </span>
+                  </div>
+                </div>
+
+                <div class="select-menu-item js-navigation-item " role="menuitem" tabindex="0">
+                  <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+                  <div class="select-menu-item-text">
+                    <input id="do_ignore" name="do" type="radio" value="ignore">
+                    <span class="select-menu-item-heading">Ignoring</span>
+                    <span class="description">Never be notified.</span>
+                    <span class="js-select-button-text hidden-select-button-text">
+                      <svg aria-hidden="true" class="octicon octicon-mute" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8 2.81v10.38c0 .67-.81 1-1.28.53L3 10H1c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1h2l3.72-3.72C7.19 1.81 8 2.14 8 2.81zm7.53 3.22l-1.06-1.06-1.97 1.97-1.97-1.97-1.06 1.06L11.44 8 9.47 9.97l1.06 1.06 1.97-1.97 1.97 1.97 1.06-1.06L13.56 8l1.97-1.97z"></path></svg>
+                        Stop ignoring
+                    </span>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+</form>
+  </li>
+
+  <li>
+    
+  <div class="js-toggler-container js-social-container starring-container ">
+    <!-- '"` --><!-- </textarea></xmp> --><form accept-charset="UTF-8" action="https://git.generalassemb.ly/sf-wdi-45/js-functions/unstar" class="starred js-social-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="FsAiw4+gDJsin9Er5xrbR3if1fRurXBDsGd3YfmgEjk9qkJwWbtyIbzD+hRYaaemupGVX6mhiBHx5aZu+zHDKA=="></div>
+      <input type="hidden" name="context" value="repository">
+      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Unstar sf-wdi-45/js-functions" data-ga-click="Repository, click unstar button, action:files#disambiguate; text:Unstar">
+        <svg aria-hidden="true" class="octicon octicon-star" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
+        Unstar
+      </button>
+        <a class="social-count js-social-count" href="https://git.generalassemb.ly/sf-wdi-45/js-functions/stargazers" aria-label="0 users starred this repository">
+          0
+        </a>
+</form>
+    <!-- '"` --><!-- </textarea></xmp> --><form accept-charset="UTF-8" action="https://git.generalassemb.ly/sf-wdi-45/js-functions/star" class="unstarred js-social-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="/5CxSYnuRg1GlZOwMC3uM27u2T2yMSpu2rcJrwAyWxrEu+m3sVygw6m8j/4sOGWwz5Q0qGHYghnSSnPJNzKcrw=="></div>
+      <input type="hidden" name="context" value="repository">
+      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Star this repository" title="Star sf-wdi-45/js-functions" data-ga-click="Repository, click star button, action:files#disambiguate; text:Star">
+        <svg aria-hidden="true" class="octicon octicon-star" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
+        Star
+      </button>
+        <a class="social-count js-social-count" href="https://git.generalassemb.ly/sf-wdi-45/js-functions/stargazers" aria-label="0 users starred this repository">
+          0
+        </a>
+</form>  </div>
+
+  </li>
+
+  <li>
+        <span aria-label="Cannot fork because forking is disabled." class="btn btn-sm btn-with-count disabled" title="Cannot fork because forking is disabled.">
+          <svg aria-hidden="true" class="octicon octicon-repo-forked" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+          Fork
+</span>
+    <a href="https://git.generalassemb.ly/sf-wdi-45/js-functions/network" class="social-count" aria-label="0 users forked this repository">
+      0
+    </a>
+  </li>
+</ul>
+
+      <h1 class="private ">
+  <svg aria-hidden="true" class="octicon octicon-lock" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M4 13H3v-1h1v1zm8-6v7c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1h1V4c0-2.2 1.8-4 4-4s4 1.8 4 4v2h1c.55 0 1 .45 1 1zM3.8 6h4.41V4c0-1.22-.98-2.2-2.2-2.2-1.22 0-2.2.98-2.2 2.2v2H3.8zM11 7H2v7h9V7zM4 8H3v1h1V8zm0 2H3v1h1v-1z"></path></svg>
+  <span class="author" itemprop="author"><a href="https://git.generalassemb.ly/sf-wdi-45" class="url fn" rel="author">sf-wdi-45</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions" data-pjax="#js-repo-pjax-container">js-functions</a></strong>
+    <span class="Label Label--outline v-align-middle">Private</span>
+
+</h1>
+
+    </div>
+    
+<nav class="reponav js-repo-nav js-sidenav-container-pjax container" itemscope="" itemtype="http://schema.org/BreadcrumbList" role="navigation" data-pjax="#js-repo-pjax-container">
+
+  <span itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="https://git.generalassemb.ly/sf-wdi-45/js-functions" class="js-selected-navigation-item selected reponav-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /sf-wdi-45/js-functions" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-code" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"></path></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a href="https://git.generalassemb.ly/sf-wdi-45/js-functions/issues" class="js-selected-navigation-item reponav-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /sf-wdi-45/js-functions/issues" itemprop="url">
+        <svg aria-hidden="true" class="octicon octicon-issue-opened" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg>
+        <span itemprop="name">Issues</span>
+        <span class="Counter">0</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="https://git.generalassemb.ly/sf-wdi-45/js-functions/pulls" class="js-selected-navigation-item reponav-item" data-hotkey="g p" data-selected-links="repo_pulls checks /sf-wdi-45/js-functions/pulls" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-git-pull-request" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="Counter">0</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+    <a href="https://git.generalassemb.ly/sf-wdi-45/js-functions/projects" class="js-selected-navigation-item reponav-item" data-hotkey="g b" data-selected-links="repo_projects new_repo_project repo_project /sf-wdi-45/js-functions/projects">
+      <svg aria-hidden="true" class="octicon octicon-project" height="16" version="1.1" viewBox="0 0 15 16" width="15"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"></path></svg>
+      Projects
+      <span class="Counter">0</span>
+</a>
+    <a href="https://git.generalassemb.ly/sf-wdi-45/js-functions/wiki" class="js-selected-navigation-item reponav-item" data-hotkey="g w" data-selected-links="repo_wiki /sf-wdi-45/js-functions/wiki">
+      <svg aria-hidden="true" class="octicon octicon-book" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"></path></svg>
+      Wiki
+</a>
+
+  <a href="https://git.generalassemb.ly/sf-wdi-45/js-functions/pulse" class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors dependency_graph pulse /sf-wdi-45/js-functions/pulse">
+    <svg aria-hidden="true" class="octicon octicon-graph" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"></path></svg>
+    Insights
+</a>
+
+</nav>
+
+
+  </div>
+
+<div class="container new-discussion-timeline experiment-repo-nav  ">
+  <div class="repository-content ">
+
+    
+  
+
+  <div class="js-repo-meta-container">
+  <div class="repository-meta mb-0 mb-3 js-repo-meta-edit js-details-container ">
+    <div class="repository-meta-content col-11 mb-1">
+          <em class="d-block text-gray">
+            No description, website, or topics provided.
+          </em>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+  <div class="overall-summary overall-summary-bottomless">
+    <div class="stats-switcher-viewport js-stats-switcher-viewport">
+      <div class="stats-switcher-wrapper">
+      <ul class="numbers-summary">
+        <li class="commits">
+          <a data-pjax="" href="https://git.generalassemb.ly/sf-wdi-45/js-functions/commits/master">
+              <svg aria-hidden="true" class="octicon octicon-history" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M8 13H6V6h5v2H8v5zM7 1C4.81 1 2.87 2.02 1.59 3.59L0 2v4h4L2.5 4.5C3.55 3.17 5.17 2.3 7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-.34.03-.67.09-1H.08C.03 7.33 0 7.66 0 8c0 3.86 3.14 7 7 7s7-3.14 7-7-3.14-7-7-7z"></path></svg>
+              <span class="num text-emphasized">
+                1
+              </span>
+              commit
+          </a>
+        </li>
+        <li>
+          <a data-pjax="" href="https://git.generalassemb.ly/sf-wdi-45/js-functions/branches">
+            <svg aria-hidden="true" class="octicon octicon-git-branch" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path fill-rule="evenodd" d="M10 5c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v.3c-.02.52-.23.98-.63 1.38-.4.4-.86.61-1.38.63-.83.02-1.48.16-2 .45V4.72a1.993 1.993 0 0 0-1-3.72C.88 1 0 1.89 0 3a2 2 0 0 0 1 1.72v6.56c-.59.35-1 .99-1 1.72 0 1.11.89 2 2 2 1.11 0 2-.89 2-2 0-.53-.2-1-.53-1.36.09-.06.48-.41.59-.47.25-.11.56-.17.94-.17 1.05-.05 1.95-.45 2.75-1.25S8.95 7.77 9 6.73h-.02C9.59 6.37 10 5.73 10 5zM2 1.8c.66 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2C1.35 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2zm0 12.41c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm6-8c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+            <span class="num text-emphasized">
+              1
+            </span>
+            branch
+          </a>
+        </li>
+
+        <li>
+          <a href="https://git.generalassemb.ly/sf-wdi-45/js-functions/releases">
+            <svg aria-hidden="true" class="octicon octicon-tag" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"></path></svg>
+            <span class="num text-emphasized">
+              0
+            </span>
+            releases
+          </a>
+        </li>
+
+        <li>
+            <a href="https://git.generalassemb.ly/sf-wdi-45/js-functions/graphs/contributors">
+  <svg aria-hidden="true" class="octicon octicon-organization" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M16 12.999c0 .439-.45 1-1 1H7.995c-.539 0-.994-.447-.995-.999H1c-.54 0-1-.561-1-1 0-2.634 3-4 3-4s.229-.409 0-1c-.841-.621-1.058-.59-1-3 .058-2.419 1.367-3 2.5-3s2.442.58 2.5 3c.058 2.41-.159 2.379-1 3-.229.59 0 1 0 1s1.549.711 2.42 2.088C9.196 9.369 10 8.999 10 8.999s.229-.409 0-1c-.841-.62-1.058-.59-1-3 .058-2.419 1.367-3 2.5-3s2.437.581 2.495 3c.059 2.41-.158 2.38-1 3-.229.59 0 1 0 1s3.005 1.366 3.005 4"></path></svg>
+    <span class="num text-emphasized">
+      0
+    </span>
+    contributors
+</a>
+
+        </li>
+      </ul>
+
+        <div class="repository-lang-stats">
+          <ol class="repository-lang-stats-numbers">
+            <li>
+                <a href="https://git.generalassemb.ly/sf-wdi-45/js-functions/search?l=javascript" data-ga-click="Repository, language stats search click, location:repo overview">
+                  <span class="color-block language-color" style="background-color:#f1e05a;"></span>
+                  <span class="lang">JavaScript</span>
+                  <span class="percent">93.6%</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://git.generalassemb.ly/sf-wdi-45/js-functions/search?l=html" data-ga-click="Repository, language stats search click, location:repo overview">
+                  <span class="color-block language-color" style="background-color:#e34c26;"></span>
+                  <span class="lang">HTML</span>
+                  <span class="percent">6.4%</span>
+                </a>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="repository-lang-stats-graph js-toggle-lang-stats" title="Click for language details" data-ga-click="Repository, language bar stats toggle, location:repo overview">
+      <span class="language-color" aria-label="JavaScript 93.6%" style="width:93.6%; background-color:#f1e05a;" itemprop="keywords">JavaScript</span>
+      <span class="language-color" aria-label="HTML 6.4%" style="width:6.4%; background-color:#e34c26;" itemprop="keywords">HTML</span>
+    </div>
+
+
+    
+
+  <div class="file-navigation in-mid-page">
+
+    <details class="get-repo-select-menu js-menu-container float-right position-relative dropdown-details details-reset">
+  <summary class="btn btn-sm btn-primary">
+    Clone or download
+    <span class="dropdown-caret"></span>
+  </summary>
+  <div class="position-relative">
+    <div class="get-repo-modal dropdown-menu dropdown-menu-sw pb-0 js-toggler-container ">
+        <div class="clone-options https-clone-options">
+            <!-- '"` --><!-- </textarea></xmp> --><form accept-charset="UTF-8" action="https://git.generalassemb.ly/users/set_protocol?protocol_selector=ssh&amp;protocol_type=clone" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="8JKVYlBLm3fG6JIEW3pymTFqlMu6ICvqBj9bTBEXX+LNFslCLW/1RfVDKZEvHKVsefYsmryNWx7/wGNwH3Un3w=="></div><button class="btn-link btn-change-protocol js-toggler-target float-right" type="submit">Use SSH</button></form>
+
+          <h4 class="mb-1">
+            Clone with HTTPS
+            <a class="muted-link" href="https://help.github.com/enterprise/2.13/user/articles/which-remote-url-should-i-use" target="_blank" title="Which remote URL should I use?">
+              <svg aria-hidden="true" class="octicon octicon-question" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M6 10h2v2H6v-2zm4-3.5C10 8.64 8 9 8 9H6c0-.55.45-1 1-1h.5c.28 0 .5-.22.5-.5v-1c0-.28-.22-.5-.5-.5h-1c-.28 0-.5.22-.5.5V7H4c0-1.5 1.5-3 3-3s3 1 3 2.5zM7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7z"></path></svg>
+            </a>
+          </h4>
+          <p class="mb-2 get-repo-decription-text">
+            Use Git or checkout with SVN using the web URL.
+          </p>
+
+          <div class="input-group js-zeroclipboard-container">
+  <input type="text" class="form-control input-monospace input-sm js-zeroclipboard-target js-url-field" value="https://git.generalassemb.ly/sf-wdi-45/js-functions.git" aria-label="Clone this repository at https://git.generalassemb.ly/sf-wdi-45/js-functions.git" readonly="">
+  <div class="input-group-button">
+    <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><svg aria-hidden="true" class="octicon octicon-clippy" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M2 13h4v1H2v-1zm5-6H2v1h5V7zm2 3V8l-3 3 3 3v-2h5v-2H9zM4.5 9H2v1h2.5V9zM2 12h2.5v-1H2v1zm9 1h1v2c-.02.28-.11.52-.3.7-.19.18-.42.28-.7.3H1c-.55 0-1-.45-1-1V4c0-.55.45-1 1-1h3c0-1.11.89-2 2-2 1.11 0 2 .89 2 2h3c.55 0 1 .45 1 1v5h-1V6H1v9h10v-2zM2 5h8c0-.55-.45-1-1-1H8c-.55 0-1-.45-1-1s-.45-1-1-1-1 .45-1 1-.45 1-1 1H3c-.55 0-1 .45-1 1z"></path></svg></button>
+  </div>
+</div>
+
+        </div>
+
+        <div class="clone-options ssh-clone-options">
+            <!-- '"` --><!-- </textarea></xmp> --><form accept-charset="UTF-8" action="https://git.generalassemb.ly/users/set_protocol?protocol_selector=https&amp;protocol_type=clone" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="G//6OBVazJBoF1c5WTb1LCDfIXl52areP5P7Hq1RXyMme6YYaH6iolu87KwtUCLZaEOZKH902irGbMMiozMnHg=="></div><button class="btn-link btn-change-protocol js-toggler-target float-right" type="submit">Use HTTPS</button></form>
+
+            <h4 class="mb-1">
+              Clone with SSH
+              <a class="muted-link" href="https://help.github.com/enterprise/2.13/user/articles/which-remote-url-should-i-use" target="_blank" title="Which remote URL should I use?">
+                <svg aria-hidden="true" class="octicon octicon-question" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M6 10h2v2H6v-2zm4-3.5C10 8.64 8 9 8 9H6c0-.55.45-1 1-1h.5c.28 0 .5-.22.5-.5v-1c0-.28-.22-.5-.5-.5h-1c-.28 0-.5.22-.5.5V7H4c0-1.5 1.5-3 3-3s3 1 3 2.5zM7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7z"></path></svg>
+              </a>
+            </h4>
+            <p class="mb-2 get-repo-decription-text">
+              Use an SSH key and passphrase from account.
+            </p>
+
+            <div class="input-group js-zeroclipboard-container">
+  <input type="text" class="form-control input-monospace input-sm js-zeroclipboard-target js-url-field" value="git@git.generalassemb.ly:sf-wdi-45/js-functions.git" aria-label="Clone this repository at git@git.generalassemb.ly:sf-wdi-45/js-functions.git" readonly="">
+  <div class="input-group-button">
+    <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><svg aria-hidden="true" class="octicon octicon-clippy" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M2 13h4v1H2v-1zm5-6H2v1h5V7zm2 3V8l-3 3 3 3v-2h5v-2H9zM4.5 9H2v1h2.5V9zM2 12h2.5v-1H2v1zm9 1h1v2c-.02.28-.11.52-.3.7-.19.18-.42.28-.7.3H1c-.55 0-1-.45-1-1V4c0-.55.45-1 1-1h3c0-1.11.89-2 2-2 1.11 0 2 .89 2 2h3c.55 0 1 .45 1 1v5h-1V6H1v9h10v-2zM2 5h8c0-.55-.45-1-1-1H8c-.55 0-1-.45-1-1s-.45-1-1-1-1 .45-1 1-.45 1-1 1H3c-.55 0-1 .45-1 1z"></path></svg></button>
+  </div>
+</div>
+
+        </div>
+      <div class="mt-2">
+          <a href="https://desktop.github.com/" class="btn btn-outline get-repo-btn tooltipped tooltipped-s tooltipped-multiline" aria-label="Clone sf-wdi-45/js-functions to your computer and use it in GitHub Desktop.">
+    Open in Desktop
+  </a>
+
+<a href="https://git.generalassemb.ly/sf-wdi-45/js-functions/archive/master.zip" class="btn btn-outline get-repo-btn
+" rel="nofollow" data-ga-click="Repository, download zip, location:repo overview">
+  Download ZIP
+</a>
+
+      </div>
+    </div>
+  </div>
+</details>
+
+
+  <div class="BtnGroup float-right">
+      
+  <!-- '"` --><!-- </textarea></xmp> --><form accept-charset="UTF-8" action="https://git.generalassemb.ly/sf-wdi-45/js-functions/new/master" class="BtnGroup-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="SkMtK4IKCat+XLx7kzSkdqlAqwY2zNhOrMpdI7u5JDZNeB9NlfnWn54yeZbYYLDZ/sB2FMxf6JbRPI8Pq404sA=="></div>
+    <button class="btn btn-sm BtnGroup-item" type="submit" data-disable-with="Creating file…">
+      Create new file
+    </button>
+</form>
+
+      
+  <a href="https://git.generalassemb.ly/sf-wdi-45/js-functions/upload/master" class="btn btn-sm BtnGroup-item">
+    Upload files
+  </a>
+
+
+    <a href="https://git.generalassemb.ly/sf-wdi-45/js-functions/find/master" class="btn btn-sm empty-icon float-right BtnGroup-item" data-pjax="" data-hotkey="t" data-ga-click="Repository, find file, location:repo overview">
+      Find file
+    </a>
+  </div>
+
+  
+<div class="select-menu branch-select-menu js-menu-container js-select-menu float-left">
+  <button class=" btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w" type="button" aria-label="Switch branches or tags" aria-expanded="false" aria-haspopup="true">
+      <i>Branch:</i>
+      <span class="js-select-button css-truncate-target">master</span>
+  </button>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax="">
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <svg aria-label="Close" class="octicon octicon-x js-menu-close" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"></path></svg>
+        <span class="select-menu-title">Switch branches/tags</span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="form-control js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="https://git.generalassemb.ly/sf-wdi-45/js-functions#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab" role="tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="https://git.generalassemb.ly/sf-wdi-45/js-functions#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab" role="tab">Tags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches" role="menu">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open selected" href="https://git.generalassemb.ly/sf-wdi-45/js-functions/tree/master" data-name="master" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                master
+              </span>
+            </a>
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+        <a href="https://git.generalassemb.ly/sf-wdi-45/js-functions/pull/new/master" class="btn btn-sm new-pull-request-btn" data-pjax="" data-ga-click="Repository, new pull request, location:repo overview">
+          New pull request
+        </a>
+
+  <div class="breadcrumb">
+    
+  </div>
+</div>
+
+
+  
+
+
+  <div class="commit-tease js-details-container Details">
+    <span class="float-right">
+      Latest commit
+      <a class="commit-tease-sha" href="https://git.generalassemb.ly/sf-wdi-45/js-functions/commit/0068c8ce64b8709c191130c66bb1e0c07cdfb114" data-pjax="">
+        0068c8c
+      </a>
+      <span itemprop="dateModified"><relative-time datetime="2018-05-08T14:56:24Z" title="May 8, 2018, 7:56 AM PDT">6 hours ago</relative-time></span>
+    </span>
+
+
+    <div class="d-flex no-wrap">
+      
+<div class="AvatarStack flex-self-start ">
+  <div class="AvatarStack-body tooltipped tooltipped-se tooltipped-align-left-1" aria-label="Justin Castilla">
+
+        <img src="./sf-wdi-45_js-functions_files/gravatar-user-420.png" width="20" height="20" class="avatar" alt="Justin Castilla">
+  </div>
+</div>
+
+      <div class="flex-auto f6">
+        
+        <span class="commit-author user-mention">Justin Castilla</span>
+
+
+  
+
+
+          <a href="https://git.generalassemb.ly/sf-wdi-45/js-functions/commit/0068c8ce64b8709c191130c66bb1e0c07cdfb114" class="message" data-pjax="true" title="initial commit">initial commit</a>
+
+      </div>
+    </div>
+  </div>
+
+
+
+<div class="file-wrap">
+
+  <a href="https://git.generalassemb.ly/sf-wdi-45/js-functions/tree/0068c8ce64b8709c191130c66bb1e0c07cdfb114" class="d-none js-permalink-shortcut" data-hotkey="y">Permalink</a>
+
+  <table class="files js-navigation-container js-active-navigation-container" data-pjax="">
+
+
+    <tbody>
+      <tr class="warning include-fragment-error">
+        <td class="icon"><svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"></path></svg></td>
+        <td class="content" colspan="3">Failed to load latest commit information.</td>
+      </tr>
+
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-directory" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./sf-wdi-45_js-functions_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions/tree/master/assets" class="js-navigation-open" id="32bb636196f91ed59d7a49190e26b42c-261e010b608a23934826c397cad9801f4d7cd0b7" title="assets">assets</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://git.generalassemb.ly/sf-wdi-45/js-functions/commit/0068c8ce64b8709c191130c66bb1e0c07cdfb114" class="message" data-pjax="true" title="initial commit">initial commit</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-05-08T14:56:24Z" title="May 8, 2018, 7:56 AM PDT">6 hours ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-directory" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./sf-wdi-45_js-functions_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions/tree/master/examples" class="js-navigation-open" id="bfebe34154a0dfd9fc7b447fc9ed74e9-b6c0291902a44009ed29abc2dc1bca72dad33a98" title="examples">examples</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://git.generalassemb.ly/sf-wdi-45/js-functions/commit/0068c8ce64b8709c191130c66bb1e0c07cdfb114" class="message" data-pjax="true" title="initial commit">initial commit</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-05-08T14:56:24Z" title="May 8, 2018, 7:56 AM PDT">6 hours ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-directory" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./sf-wdi-45_js-functions_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions/tree/master/exercises" class="js-navigation-open" id="ef8a960a23f62c6a35a796264347c187-58f3f1a2aeafddc01e441859df2e9ab3f377e706" title="exercises">exercises</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://git.generalassemb.ly/sf-wdi-45/js-functions/commit/0068c8ce64b8709c191130c66bb1e0c07cdfb114" class="message" data-pjax="true" title="initial commit">initial commit</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-05-08T14:56:24Z" title="May 8, 2018, 7:56 AM PDT">6 hours ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-directory" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./sf-wdi-45_js-functions_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions/tree/master/lessons" class="js-navigation-open" id="851adbefaca9932ef2861a5288d5ceea-4b1a434ef377d160dfe965a5f70c788d9a01e0f0" title="lessons">lessons</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://git.generalassemb.ly/sf-wdi-45/js-functions/commit/0068c8ce64b8709c191130c66bb1e0c07cdfb114" class="message" data-pjax="true" title="initial commit">initial commit</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-05-08T14:56:24Z" title="May 8, 2018, 7:56 AM PDT">6 hours ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./sf-wdi-45_js-functions_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions/blob/master/README.md" class="js-navigation-open" id="04c6e90faac2675aa89e2176d2eec7d8-94ff3c11d33b5c08cac93cdf757c847c7c71b832" title="README.md">README.md</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://git.generalassemb.ly/sf-wdi-45/js-functions/commit/0068c8ce64b8709c191130c66bb1e0c07cdfb114" class="message" data-pjax="true" title="initial commit">initial commit</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-05-08T14:56:24Z" title="May 8, 2018, 7:56 AM PDT">6 hours ago</time-ago></span>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+</div>
+
+
+
+  <div id="readme" class="readme boxed-group clearfix announce instapaper_body md">
+    <h3>
+      <svg aria-hidden="true" class="octicon octicon-book" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"></path></svg>
+      README.md
+    </h3>
+
+      <article class="markdown-body entry-content" itemprop="text"><h1><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions#-functions" aria-hidden="true" class="anchor" id="user-content--functions"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a href="./sf-wdi-45_js-functions_files/logo-9f88ae6c9c3871690e33280fcf557f33.png" target="_blank"><img src="./sf-wdi-45_js-functions_files/logo-9f88ae6c9c3871690e33280fcf557f33.png" alt="" style="max-width:100%;"></a> Functions</h1>
+<h3><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions#learning-objectives" aria-hidden="true" class="anchor" id="user-content-learning-objectives"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>LEARNING OBJECTIVES</h3>
+<p><em>After this lesson, you will be able to:</em></p>
+<ul>
+<li>Describe why functions are useful.</li>
+<li>Differentiate between function declarations and function expressions.</li>
+<li>Describe how parameters relate to functions.</li>
+<li>Explain how return statements are used in JavaScript.</li>
+<li>Compare global and local scope.</li>
+</ul>
+<h3><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions#student-pre-work" aria-hidden="true" class="anchor" id="user-content-student-pre-work"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>STUDENT PRE-WORK</h3>
+<p><em>Before this lesson, you should already be able to:</em></p>
+<ul>
+<li>Create variables in JavaScript.</li>
+<li>Differentiate between data types (strings, numbers, Booleans).</li>
+<li>Use conditionals to control program flow based on Boolean conditions.</li>
+<li>Create and manipulate arrays.</li>
+<li>Use loops to iterate through the elements in an array.</li>
+</ul>
+<hr>
+<p><a name="user-content-opening"></a></p>
+<h2><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions#opening" aria-hidden="true" class="anchor" id="user-content-opening"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Opening</h2>
+<ul>
+<li>Review current lesson objectives</li>
+</ul>
+<p>In the past few lessons, we looked at how we can control the flow of a program by using conditional statements and loops. After that, you probably noticed how quickly a program can grow in length and complexity.</p>
+<p>In this lesson, we'll take a look at how we can use functions to group together statements that perform a specific task and reduce repetition in our programs.</p>
+<p>Take a look at this short <a href="https://generalassembly.wistia.com/medias/qmhj5hv27i" rel="nofollow">video</a> that provides an overview of how functions are useful in our programs.</p>
+<hr>
+<p><a name="user-content-intro-to-functions"></a></p>
+<h2><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions#introduction-to-functions" aria-hidden="true" class="anchor" id="user-content-introduction-to-functions"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Introduction to Functions</h2>
+<p><strong>Function</strong> is a term that comes out of mathematics. You may remember hearing it in your high school algebra class.</p>
+<p>The basic idea of a function is simple — it's a relationship between a set of inputs and a set of outputs.</p>
+<p>Take a look at the relationship between variable <code>x</code> and function <code>f</code> in this example.</p>
+<p>Function <code>f</code>takes the input <code>x</code> and spits out a single output ( <code>f(x)</code> ).</p>
+<p>Can you guess what this function does to the value of <code>x</code>?</p>
+<p><a href="./sf-wdi-45_js-functions_files/Slide-5-Funnel-Chart.svg" target="_blank"><img src="./sf-wdi-45_js-functions_files/Slide-5-Funnel-Chart.svg" alt="" style="max-width:100%;"></a></p>
+<p>If you guessed "multiplies <code>x</code> by 2," you're right!</p>
+<h4><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions#why-are-functions-useful" aria-hidden="true" class="anchor" id="user-content-why-are-functions-useful"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Why are functions useful?</h4>
+<p>In JavaScript, a function can be:</p>
+<ol>
+<li>Made up of either a single reusable statement or a group of reusable statements.</li>
+<li>Called from anywhere in the program, which allows for the statements inside a function to not be written over and over again.</li>
+</ol>
+<p>Functions are especially useful because they enable a developer to segment large, unwieldy applications into smaller, more manageable pieces.</p>
+<h4><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions#example-of-using-a-function" aria-hidden="true" class="anchor" id="user-content-example-of-using-a-function"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Example of using a function</h4>
+<p>Here's an example of what a function can do:</p>
+<p>If you've watched enough Matt Damon movies, you may have noticed that the government often spends a lot of time and money to go save his characters.</p>
+<p><a href="./sf-wdi-45_js-functions_files/matt-damon.jpg" target="_blank"><img src="./sf-wdi-45_js-functions_files/matt-damon.jpg" alt="maaaaatt daaaamon" style="max-width:100%;"></a></p>
+<p>Even if you haven't watched a single Matt Damon movie, take our word for it — the guy can't keep himself out of trouble.</p>
+<p>Now let's take a look at a program that breaks down some of Matt Damon's movies and respective rescue costs.</p>
+<p>As you can see from the code, a director only wants to save Matt Damon if the cost is less than 1000 dollars.</p>
+<p>This repeats for every additional movie.</p>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> movie <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>Saving Private Ryan<span class="pl-pds">"</span></span>;
+<span class="pl-k">var</span> cost <span class="pl-k">=</span> <span class="pl-c1">100</span>;
+<span class="pl-k">if</span> (cost <span class="pl-k">&lt;</span> <span class="pl-c1">1000</span>) {
+	<span class="pl-en">console</span>.<span class="pl-c1">log</span>(movie <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span> director says LET'S RESCUE MATT DAMON!<span class="pl-pds">"</span></span>);
+} <span class="pl-k">else</span> {
+	<span class="pl-en">console</span>.<span class="pl-c1">log</span>(movie <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span> director says FORGET MATT DAMON!<span class="pl-pds">"</span></span>);
+}
+
+<span class="pl-k">var</span> movie <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>Interstellar<span class="pl-pds">"</span></span>;
+<span class="pl-k">var</span> cost <span class="pl-k">=</span> <span class="pl-c1">2000</span>;
+<span class="pl-k">if</span> (cost <span class="pl-k">&lt;</span> <span class="pl-c1">1000</span>) {
+	<span class="pl-en">console</span>.<span class="pl-c1">log</span>(movie <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span> director says LET'S RESCUE MATT DAMON!<span class="pl-pds">"</span></span>);
+} <span class="pl-k">else</span> {
+	<span class="pl-en">console</span>.<span class="pl-c1">log</span>(movie <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span> director says FORGET MATT DAMON!<span class="pl-pds">"</span></span>);
+}
+
+<span class="pl-k">var</span> movie <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>The Martian<span class="pl-pds">"</span></span>;
+<span class="pl-k">var</span> cost <span class="pl-k">=</span> <span class="pl-c1">700</span>;
+<span class="pl-k">if</span> (cost <span class="pl-k">&lt;</span> <span class="pl-c1">1000</span>) {
+	<span class="pl-en">console</span>.<span class="pl-c1">log</span>(movie <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span> director says LET'S RESCUE MATT DAMON!<span class="pl-pds">"</span></span>);
+} <span class="pl-k">else</span> {
+	<span class="pl-en">console</span>.<span class="pl-c1">log</span>(movie <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span> director says FORGET MATT DAMON!<span class="pl-pds">"</span></span>);
+}
+</pre></div>
+<p>This is all easy enough to write out, but because Matt Damon has been in so many movies where he needs to be rescued, this code is going to get pretty lengthy!</p>
+<p>Let's try to keep our code from getting out of hand by using a function.</p>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> <span class="pl-en">mattDamon</span> <span class="pl-k">=</span> <span class="pl-k">function</span> (<span class="pl-smi">movie</span>, <span class="pl-smi">cost</span>) {
+	<span class="pl-k">if</span> (cost <span class="pl-k">&lt;</span> <span class="pl-c1">1000</span>) {
+		<span class="pl-en">console</span>.<span class="pl-c1">log</span>(movie <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span> director says LET'S RESCUE MATT DAMON!<span class="pl-pds">"</span></span>);
+	} <span class="pl-k">else</span> {
+		<span class="pl-en">console</span>.<span class="pl-c1">log</span>(movie <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span> director says FORGET MATT DAMON!<span class="pl-pds">"</span></span>);
+	}
+}
+
+<span class="pl-en">mattDamon</span>(<span class="pl-s"><span class="pl-pds">"</span>Saving Private Ryan<span class="pl-pds">"</span></span>, <span class="pl-c1">100</span>);
+<span class="pl-en">mattDamon</span>(<span class="pl-s"><span class="pl-pds">"</span>Interstellar<span class="pl-pds">"</span></span>, <span class="pl-c1">2000</span>);
+<span class="pl-en">mattDamon</span>(<span class="pl-s"><span class="pl-pds">"</span>The Martian<span class="pl-pds">"</span></span>, <span class="pl-c1">700</span>);
+<span class="pl-en">mattDamon</span>(<span class="pl-s"><span class="pl-pds">"</span>Elysium<span class="pl-pds">"</span></span>, <span class="pl-c1">200</span>);
+</pre></div>
+<p>Notice how much cleaner and simpler this function looks than our repeated lines of code?</p>
+<p>Now if Matt Damon decides to film more movies where he needs to be rescued, all we have to do is type:</p>
+<div class="highlight highlight-source-js"><pre><span class="pl-en">mattDamon</span>(<span class="pl-s"><span class="pl-pds">"</span>movieTitleHere<span class="pl-pds">"</span></span>, costHere)</pre></div>
+<p>Using functions is a great way to save time and simplify things for you and your team members.</p>
+<h4><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions#dry---dont-repeat-yourself" aria-hidden="true" class="anchor" id="user-content-dry---dont-repeat-yourself"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>DRY - Don't Repeat Yourself</h4>
+<p>Functions are a critical component of programming because they allow us to execute on a key tenant of engineering:</p>
+<p>"<strong>D</strong>on't <strong>R</strong>epeat <strong>Y</strong>ourself" (a.k.a. "DRY" code).</p>
+<p>Our goal is to craft our programs in as few lines of code as possible, while still being clear.</p>
+<h5><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions#why-should-we-avoid-repetition" aria-hidden="true" class="anchor" id="user-content-why-should-we-avoid-repetition"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Why should we avoid repetition?</h5>
+<ol>
+<li>
+<p><strong>Performance:</strong> Having repeated code will lead to longer scripts. Longer scripts take up more memory and will take more time to load, which can make a website seem slow.</p>
+</li>
+<li>
+<p><strong>Maintainability:</strong> Imagine that we have the same line of code repeated 10 times in our program. If we ever want to change that functionality, we would have to search for all 10 places where that code is repeated and make 10 individual changes.</p>
+</li>
+</ol>
+<h4><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions#why-use-functions---summary" aria-hidden="true" class="anchor" id="user-content-why-use-functions---summary"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Why use functions - Summary</h4>
+<p>Let's review the three main reasons that functions are created:</p>
+<p><a href="./sf-wdi-45_js-functions_files/Slide-17-Chart.svg" target="_blank"><img src="./sf-wdi-45_js-functions_files/Slide-17-Chart.svg" alt="" style="max-width:100%;"></a></p>
+<hr>
+<p><a name="user-content-function-expressions"></a></p>
+<h2><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions#function-expressions" aria-hidden="true" class="anchor" id="user-content-function-expressions"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Function Expressions</h2>
+<p>Now we know what functions are and why we use them. But how do we create them?</p>
+<p>As you saw in our Matt Damon Rescue example, we must define a function before we call or "use" it (just as with a variable).</p>
+<p>In JS, functions can be defined in several ways. Two of the more common methods of defining a function are <strong>function declaration</strong> and <strong>function expression</strong>.</p>
+<h4><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions#function-expressions---overview" aria-hidden="true" class="anchor" id="user-content-function-expressions---overview"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Function Expressions - Overview</h4>
+<p>Let's take a look at <strong>function expressions</strong> first.</p>
+<p>A <strong>function expression</strong> defines a function by producing a value that's stored in a variable.</p>
+<p>This is similar to the way an expression produces a value that's stored in a variable — hence the name.</p>
+<p><a href="./sf-wdi-45_js-functions_files/Slide-19.svg" target="_blank"><img src="./sf-wdi-45_js-functions_files/Slide-19.svg" alt="" style="max-width:100%;"></a></p>
+<p>Have you ever tried to move forward to the next page of an online form, only to be greeted by an alert that says, "Please fill out all the required fields"?</p>
+<p>This kind of code can be placed in a function, and this function can be called anytime the user hasn't filled out a field on any form on the site. Let's code for this popup alert using a function expression:</p>
+<p><a href="./sf-wdi-45_js-functions_files/code_block_1.png" target="_blank"><img src="./sf-wdi-45_js-functions_files/code_block_1.png" alt="" style="max-width:100%;"></a></p>
+<p>Let's take a look at the function in more detail:</p>
+<ol>
+<li>The first line begins by declaring a variable called <code>errorAlert</code>. This is the name that we can then use to call that function.
+<a href="./sf-wdi-45_js-functions_files/code_block_2.png" target="_blank"><img src="./sf-wdi-45_js-functions_files/code_block_2.png" alt="" style="max-width:100%;"></a></li>
+<li>This is followed by the word <code>function</code>, which is a keyword we use to let JS know that we are creating a function.
+<a href="./sf-wdi-45_js-functions_files/code_block_3.png" target="_blank"><img src="./sf-wdi-45_js-functions_files/code_block_3.png" alt="" style="max-width:100%;"></a></li>
+<li>Next, you have a list of parameters surrounded by parentheses. Even though the parameters that can go within the parentheses are optional, the parentheses themselves are <em>always</em> required.
+<a href="./sf-wdi-45_js-functions_files/code_block_4.png" target="_blank"><img src="./sf-wdi-45_js-functions_files/code_block_4.png" alt="" style="max-width:100%;"></a></li>
+<li>The statements inside the function will run every time the function is called. The function body must always be wrapped in curly braces <code>{ }</code>, even when it consists of only a single statement.
+<a href="./sf-wdi-45_js-functions_files/code_block_5.png" target="_blank"><img src="./sf-wdi-45_js-functions_files/code_block_5.png" alt="" style="max-width:100%;"></a></li>
+</ol>
+<h4><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions#naming-conventions" aria-hidden="true" class="anchor" id="user-content-naming-conventions"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Naming Conventions</h4>
+<p>Now that we've learned about function expressions, let's discuss naming conventions.</p>
+<p>You may have noticed how we capitalize names in JavaScript using the camelCase style.</p>
+<p><a href="./sf-wdi-45_js-functions_files/Slide-25-Camel.svg" target="_blank"><img src="./sf-wdi-45_js-functions_files/Slide-25-Camel.svg" width="350px" style="max-width:100%;"></a></p>
+<p>Let's take a quick look at some good and bad examples of function names, and what can cause them to break down:</p>
+<ul>
+<li>
+<p><strong>Bad:</strong> <code>thisfunctioncalculatestheperimeterofarectangle</code><br>
+(no camelCase, too verbose)</p>
+</li>
+<li>
+<p><strong>Bad:</strong> <code>my new function</code><br>
+(contains spaces)</p>
+</li>
+<li>
+<p><strong>Bad:</strong> <code>myNewFunction</code><br>
+(doesn't explain what it does!)</p>
+</li>
+<li>
+<p><strong>Good:</strong> <code>calculateArea</code><br>
+(describes what it does, short, and uses camelCase)</p>
+</li>
+</ul>
+<h4><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions#calling-a-function" aria-hidden="true" class="anchor" id="user-content-calling-a-function"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Calling a function</h4>
+<p>To run the code in a function, we <strong>call</strong>, or invoke, the function by using the function name followed by parentheses.</p>
+<div class="highlight highlight-source-js"><pre><span class="pl-en">pickADescriptiveName</span>();</pre></div>
+<p>The code in a function will not run when the function is defined. The code will only run when the function is called.</p>
+<h4><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions#exercise---cat-talk" aria-hidden="true" class="anchor" id="user-content-exercise---cat-talk"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Exercise - Cat Talk</h4>
+<ol>
+<li>Write a function <code>catTalk</code>.</li>
+<li>Inside the function, log "Meow" to the console. [Hint: add <code>console.log();</code>]</li>
+<li>Call the <code>catTalk</code> function. [Hint: Make sure you use parentheses.]</li>
+<li>Check your console to make sure "Meow" is displayed.</li>
+</ol>
+<p>Great job!</p>
+<h4><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions#exercise---area" aria-hidden="true" class="anchor" id="user-content-exercise---area"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Exercise - Area</h4>
+<ol>
+<li>Write a function <code>area</code>.</li>
+<li>Within the function:</li>
+</ol>
+<ul>
+<li>Declare a variable <code>width</code> and give it the value of 5.</li>
+<li>Declare a second variable <code>length</code> and give it the value of 3.</li>
+<li>Log <code>width * length</code> to the console.</li>
+</ul>
+<ol start="4">
+<li>Call the <code>area</code> function.</li>
+<li>Check your console to make sure '15' is displayed.</li>
+</ol>
+<p>Great job!</p>
+<hr>
+<p><a name="user-content-arguments-and-parameters"></a></p>
+<h2><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions#arguments-and-parameters" aria-hidden="true" class="anchor" id="user-content-arguments-and-parameters"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Arguments and Parameters</h2>
+<p>Now that we know how to call functions, let's see how we can add more details to our functions through parameters and arguments.</p>
+<h4><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions#why-are-arguments-and-parameters-useful" aria-hidden="true" class="anchor" id="user-content-why-are-arguments-and-parameters-useful"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Why are arguments and parameters useful?</h4>
+<p>Earlier in the lesson, we created a function that calculated the area for a space with a width of 5 and length of 3.</p>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> <span class="pl-en">area</span> <span class="pl-k">=</span> <span class="pl-k">function</span> () {
+  <span class="pl-k">var</span> width <span class="pl-k">=</span> <span class="pl-c1">5</span>;
+  <span class="pl-k">var</span> length <span class="pl-k">=</span> <span class="pl-c1">3</span>;
+  <span class="pl-en">console</span>.<span class="pl-c1">log</span>(width <span class="pl-k">*</span> length);
+}
+
+<span class="pl-en">area</span>();</pre></div>
+<p>What would we do if we also wanted to find the area of our kitchen, a room that is 12 feet wide and 16 feet long?</p>
+<p>We could create another function for that area:</p>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> <span class="pl-en">kitchenArea</span> <span class="pl-k">=</span> <span class="pl-k">function</span> () {
+  <span class="pl-k">var</span> width <span class="pl-k">=</span> <span class="pl-c1">12</span>;
+  <span class="pl-k">var</span> length <span class="pl-k">=</span> <span class="pl-c1">16</span>;
+  <span class="pl-en">console</span>.<span class="pl-c1">log</span>(width <span class="pl-k">*</span> length);
+}
+
+<span class="pl-en">kitchenArea</span>();</pre></div>
+<p>What if we wanted to find the area of all the rooms in our house?</p>
+<p>We don't want to have to create a separate function for each room — that's a lot of work on our end.</p>
+<p>It will also burden our program with repeated code, which we want to avoid.</p>
+<p>Remember, keep it DRY! (Don't Repeat Yourself).</p>
+<p><a href="./sf-wdi-45_js-functions_files/Slide-6-Mansion.svg" target="_blank"><img src="./sf-wdi-45_js-functions_files/Slide-6-Mansion.svg" alt="" style="max-width:100%;"></a></p>
+<p>Wouldn't it be nice if we had some way of providing the area function with the information it needs to calculate the area for any given space?</p>
+<p>In this lesson, we'll take a look at how we can do just that by using <strong>parameters</strong>.</p>
+<h4><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions#syntax---parameters-and-arguments" aria-hidden="true" class="anchor" id="user-content-syntax---parameters-and-arguments"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Syntax - Parameters and Arguments</h4>
+<p><strong>Parameters</strong> are the names listed in the function definition.</p>
+<p>Let's take a look at how we can provide our <code>area</code> function with a width and a length for each room, so we won't need to create a separate function every time we want to measure the dimensions of a new room.</p>
+<p><a href="./sf-wdi-45_js-functions_files/Slide-9-Parameter.svg" target="_blank"><img src="./sf-wdi-45_js-functions_files/Slide-9-Parameter.svg" alt="" style="max-width:100%;"></a></p>
+<p><a href="./sf-wdi-45_js-functions_files/Slide-10-Width-Length.svg" target="_blank"><img src="./sf-wdi-45_js-functions_files/Slide-10-Width-Length.svg" alt="" style="max-width:100%;"></a></p>
+<p><a href="./sf-wdi-45_js-functions_files/Slide-11-Arguments.svg" target="_blank"><img src="./sf-wdi-45_js-functions_files/Slide-11-Arguments.svg" alt="" style="max-width:100%;"></a></p>
+<p><a href="./sf-wdi-45_js-functions_files/Slide-12-Arguments.svg" target="_blank"><img src="./sf-wdi-45_js-functions_files/Slide-12-Arguments.svg" alt="" style="max-width:100%;"></a></p>
+<p>To write functions with more than one parameter, use a comma-separated list:</p>
+<p>(e.g., parameter1, parameter2, parameter3, parameter4, etc.)</p>
+<p>Here is an example of a function with four parameters:</p>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> <span class="pl-en">greetUser</span> <span class="pl-k">=</span> <span class="pl-k">function</span>(<span class="pl-smi">firstName</span>, <span class="pl-smi">lastName</span>, <span class="pl-smi">year</span>, <span class="pl-smi">city</span>) {
+  <span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-s"><span class="pl-pds">"</span>Hello <span class="pl-pds">"</span></span> <span class="pl-k">+</span> firstName <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span> <span class="pl-pds">"</span></span> <span class="pl-k">+</span> lastName <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span> born in <span class="pl-pds">"</span></span><span class="pl-k">+</span> year <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span> from <span class="pl-pds">"</span></span> <span class="pl-k">+</span> city <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span>!<span class="pl-pds">"</span></span> );
+}</pre></div>
+<blockquote>
+<p>Check: What would happen if we called the function with the following arguments?</p>
+</blockquote>
+<div class="highlight highlight-source-js"><pre><span class="pl-en">greetUser</span>(<span class="pl-s"><span class="pl-pds">"</span>Bruce<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>Wayne<span class="pl-pds">"</span></span>, <span class="pl-c1">1939</span>, <span class="pl-s"><span class="pl-pds">"</span>Gotham<span class="pl-pds">"</span></span>);</pre></div>
+<blockquote>
+<p>Answer: We would get this result:</p>
+</blockquote>
+<div class="highlight highlight-source-js"><pre>    <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">"</span>Hello Bruce Wayne born in 1939 from Gotham!<span class="pl-pds">"</span></span></pre></div>
+<h4><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions#exercise---disney" aria-hidden="true" class="anchor" id="user-content-exercise---disney"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Exercise: - Disney</h4>
+<p>Let's review parameters and arguments:</p>
+<p><a href="./sf-wdi-45_js-functions_files/Slide-16-Chart.svg" target="_blank"><img src="./sf-wdi-45_js-functions_files/Slide-16-Chart.svg" alt="" style="max-width:100%;"></a></p>
+<ol>
+<li>Create a function named <code>disney</code>.</li>
+<li>It should accept two parameters, <code>villain</code> and <code>movie</code>.</li>
+<li>The function should take the parameters and log the result to the console saying "{villain} is the meanest character in {movie}."</li>
+<li>Now call that function, passing in <code>Ursula</code> and <code>The Little Mermaid</code> as the arguments.</li>
+<li>Check the console to make sure the correct sentence is displayed!</li>
+</ol>
+<p>Great job!</p>
+<hr>
+<p><a name="user-content-return-values"></a></p>
+<h2><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions#return-statements" aria-hidden="true" class="anchor" id="user-content-return-statements"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Return Statements</h2>
+<p>We now know how to communicate with functions in one direction, by passing values to functions using parameters and arguments.</p>
+<p>But functions can also communicate back to you and return values.</p>
+<h4><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions#why-use-return-statements" aria-hidden="true" class="anchor" id="user-content-why-use-return-statements"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Why use return statements?</h4>
+<p>Sometimes we don't necessarily want to show or log something immediately to the console, or update something on the page.</p>
+<p>Instead, we might want to update a variable within a function, or even call another function without showing its effects.</p>
+<p>To do this, we use a <code>return</code> statement.</p>
+<p>Let's look at an example of updating a variable within a function.</p>
+<div class="highlight highlight-source-js"><pre><span class="pl-c"><span class="pl-c">//</span> Here this function "spits out" the sum of the parameters x and y</span>
+<span class="pl-k">var</span> <span class="pl-en">sum</span> <span class="pl-k">=</span> <span class="pl-k">function</span> (<span class="pl-smi">x</span>, <span class="pl-smi">y</span>) {
+  <span class="pl-k">return</span> x <span class="pl-k">+</span> y;
+}
+
+<span class="pl-c"><span class="pl-c">//</span> We then save that sum to the variable totalSum.</span>
+<span class="pl-k">var</span> totalSum <span class="pl-k">=</span> <span class="pl-en">sum</span>(<span class="pl-c1">3</span>, <span class="pl-c1">4</span>);
+<span class="pl-k">=&gt;</span> <span class="pl-c1">7</span>
+<span class="pl-c"><span class="pl-c">//</span> The variable totalSum will now hold the value 7.</span></pre></div>
+<p>The <code>return</code> statement <em>stops the execution of a function</em> and returns a value from that function.</p>
+<h4><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions#storing-a-return-value-in-a-variable" aria-hidden="true" class="anchor" id="user-content-storing-a-return-value-in-a-variable"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Storing a return value in a variable</h4>
+<p>When we <code>return</code> something, it ends the function's execution and "spits out" whatever we are returning.</p>
+<p>We can then store this returned value in another variable.</p>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">function</span> <span class="pl-en">addBonusPoints</span> (<span class="pl-smi">score</span>) {
+    <span class="pl-k">if</span> (score <span class="pl-k">&gt;</span> <span class="pl-c1">50</span>) {
+        <span class="pl-k">return</span> score <span class="pl-k">+</span> (score <span class="pl-k">*</span> <span class="pl-c1">.10</span>);
+				<span class="pl-c"><span class="pl-c">//</span> if score is 50, then 60.5 will be returned</span>
+    }
+
+    <span class="pl-k">return</span> score;
+}
+
+<span class="pl-k">var</span> totalPoints <span class="pl-k">=</span> <span class="pl-en">addBonusPoints</span>(<span class="pl-c1">55</span>);
+<span class="pl-c"><span class="pl-c">//</span> The variable totalPoints will now hold 60.5</span></pre></div>
+<ol>
+<li>Because the score in this case is greater than 50, we will hit the return statement <code>return score + (score * .10);</code> and the function will stop running after that point.</li>
+<li>This means that the code inside the function block below the <code>return</code> statement will never be executed and will be ignored completely.</li>
+</ol>
+<p>Pretty powerful, right?</p>
+<h4><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions#exiting-a-function" aria-hidden="true" class="anchor" id="user-content-exiting-a-function"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Exiting a function</h4>
+<p>We can also use <code>return;</code> by itself as a way to exit the function and prevent any code after it from running.</p>
+<p>Take a look at this example:</p>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> <span class="pl-en">rockAndRoll</span> <span class="pl-k">=</span> <span class="pl-k">function</span> (<span class="pl-smi">muted</span>) {
+   <span class="pl-k">var</span> song <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>It's only Rock 'N' Roll<span class="pl-pds">"</span></span>;
+   <span class="pl-k">var</span> artist <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>Rolling Stones<span class="pl-pds">"</span></span>;
+
+   <span class="pl-k">if</span> (muted <span class="pl-k">===</span> <span class="pl-c1">true</span>) {
+       <span class="pl-k">return</span>; <span class="pl-c"><span class="pl-c">//</span> Here we use return as a way to exit a function, instead of returning any value</span>
+   }
+
+    <span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-s"><span class="pl-pds">"</span>Now playing: <span class="pl-pds">"</span></span> <span class="pl-k">+</span> song <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span> by <span class="pl-pds">"</span></span> <span class="pl-k">+</span> artist);
+}
+
+<span class="pl-en">rockAndRoll</span>(<span class="pl-c1">true</span>);</pre></div>
+<p>Here, we use <code>return;</code> as a way to exit the function instead of returning any value. So when we call the function passing in <code>true</code> as an argument for <code>muted</code>, this statement will never run:</p>
+<div class="highlight highlight-source-js"><pre><span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-s"><span class="pl-pds">"</span>Now playing: <span class="pl-pds">"</span></span> <span class="pl-k">+</span> song <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span> by <span class="pl-pds">"</span></span> <span class="pl-k">+</span> artist);</pre></div>
+<hr>
+<p><a name="user-content-function-declarations"></a></p>
+<h2><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions#function-declarations" aria-hidden="true" class="anchor" id="user-content-function-declarations"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Function Declarations</h2>
+<p>Now we'll take a look at another way to define functions (<strong>function declarations</strong>) and how these differ from the function expressions we've been using.</p>
+<p>Watch this short <a href="https://generalassembly.wistia.com/medias/g1w03wkvth" rel="nofollow">video</a> for an overview of function declarations and function expressions.</p>
+<h4><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions#function-declarations-vs-function-expressions" aria-hidden="true" class="anchor" id="user-content-function-declarations-vs-function-expressions"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Function Declarations vs. Function Expressions</h4>
+<p>Remember the <code>mattDamon()</code> function?</p>
+<p>(Of course you remember, how can you forget a function that decides to "FORGET MATT DAMON"?!)</p>
+<p>Let's take a look at how we could rewrite that function as a <strong>Function declaration</strong> by changing the way we declare the function (the bottom example).</p>
+<p><a href="./sf-wdi-45_js-functions_files/Slide-5-var-function-Matt-Damon.svg" target="_blank"><img src="./sf-wdi-45_js-functions_files/Slide-5-var-function-Matt-Damon.svg" alt="" style="max-width:100%;"></a></p>
+<p>Both functions do the exact same thing; they're just written differently. We'll take a look at the difference between the two in just a few minutes.</p>
+<h4><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions#syntax" aria-hidden="true" class="anchor" id="user-content-syntax"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Syntax</h4>
+<p>As you can see, a function declaration always has:</p>
+<ul>
+<li>The keyword <code>function</code>.</li>
+<li>A descriptive name that refers to the function (this can be anything you want, as long as it's in camelCase).</li>
+<li>An optional list of parameters surrounded by parentheses.</li>
+</ul>
+<p><a href="./sf-wdi-45_js-functions_files/Slide-9-Function-Declaration-New.svg" target="_blank"><img src="./sf-wdi-45_js-functions_files/Slide-9-Function-Declaration-New.svg" width="400px" style="max-width:100%;"></a></p>
+<h4><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions#hoisting" aria-hidden="true" class="anchor" id="user-content-hoisting"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Hoisting</h4>
+<p>Right now, let's dive deeper into the differences between function declarations and function expressions. While both methods are similar, one of their main differences is the concept of <strong>hoisting</strong>.</p>
+<p>In JS, function declarations are always moved, or "hoisted," to the top of their scope by the interpreter. (Remember, the interpreter is the console in JS — the software that runs the code.)</p>
+<p>In other words, <em>you can call a function declaration before defining it</em>.</p>
+<p>Let's look at an example of hoisting:</p>
+<p><a href="./sf-wdi-45_js-functions_files/Slide-13-Hoisting-Chart.svg" target="_blank"><img src="./sf-wdi-45_js-functions_files/Slide-13-Hoisting-Chart.svg" alt="" style="max-width:100%;"></a></p>
+<h4><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions#named-vs-anonymous-functions" aria-hidden="true" class="anchor" id="user-content-named-vs-anonymous-functions"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Named vs. Anonymous Functions</h4>
+<p>Function declarations are often referred to as <strong>named functions</strong> because, in order to be able to call a function declaration, we must give it a name after the keyword <code>function()</code>.</p>
+<p>Function expressions are often referred to as <strong>anonymous functions</strong>, because the name of the function is omitted after the keyword <code>function()</code> and therefore the function itself doesn't have a name — hence, it's considered "anonymous."</p>
+<h4><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions#real-world-developers" aria-hidden="true" class="anchor" id="user-content-real-world-developers"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Real-world Developers</h4>
+<p>Now that you're familiar with both ways of declaring and assigning functions, you can choose which one works best for you.</p>
+<p>Let's watch a <a href="https://generalassembly.wistia.com/medias/exsv54zfg9" rel="nofollow">video</a> on how programmers choose their favorite method.</p>
+<hr>
+<p><a name="user-content-scope"></a></p>
+<h2><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions#variable-scope" aria-hidden="true" class="anchor" id="user-content-variable-scope"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Variable Scope</h2>
+<p>You already have some experience using both function expressions and function declarations with parameters and arguments.</p>
+<p>Now we're going to take a look at one of the complexities that comes with using functions — <strong>variable scope</strong>.</p>
+<p>We'll also dig deeper into how we can use our newfound knowledge of scope to make our scripts run faster and avoid variable-naming conflicts.</p>
+<h4><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions#global-vs-local-scope" aria-hidden="true" class="anchor" id="user-content-global-vs-local-scope"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Global vs. Local Scope</h4>
+<p>Watch this short <a href="https://generalassembly.wistia.com/medias/bffc1s0pkf" rel="nofollow">video</a> for an overview of local vs. global variables and a helpful analogy to remember the difference between the two.</p>
+<p>In JavaScript, where you declare a variable affects where that variable can be used within your code.</p>
+<p>When we declare variables inside a function, those variables will only be accessible from within that function. This is known as <strong>scope</strong>.</p>
+<p>You can think of the <strong>scope</strong> as the lifetime of the variable (where in the program the variable is born, as well as where it 'dies' or is discarded).</p>
+<p>Let's look at the two different types of scope: <strong>global</strong> and <strong>local</strong>.</p>
+<h4><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions#global-variables" aria-hidden="true" class="anchor" id="user-content-global-variables"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Global Variables</h4>
+<p>Before you even write a line of JavaScript, you're in what is known as the <strong>global scope</strong>.</p>
+<p>When a variable is declared <strong>outside a function</strong>, it is referred to as a <strong>global variable</strong>. A global variable has global scope, which means <em>all scripts and functions on a web page can access it</em>.</p>
+<p>Let's take a look:</p>
+<p><a href="./sf-wdi-45_js-functions_files/Slide-7-Annotated.svg" target="_blank"><img src="./sf-wdi-45_js-functions_files/Slide-7-Annotated.svg" alt="" style="max-width:100%;"></a></p>
+<h4><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions#local-variables" aria-hidden="true" class="anchor" id="user-content-local-variables"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Local Variables</h4>
+<p>Conversely, if a variable is declared inside a function, it is local to that function and therefore referred to as a <strong>local variable</strong>.</p>
+<p>This also means it has <strong>local scope</strong>. When we have a variable with local scope, <em>it cannot be referenced outside of that function</em>, which means it cannot be called or used outside of the brackets in which it's contained.</p>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> <span class="pl-en">sayHello</span> <span class="pl-k">=</span> <span class="pl-k">function</span> () {
+	<span class="pl-k">var</span> brother <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>Bill<span class="pl-pds">"</span></span>;
+	<span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-s"><span class="pl-pds">"</span>Hello <span class="pl-pds">"</span></span> <span class="pl-k">+</span> brother);
+}
+
+<span class="pl-en">sayHello</span>();
+</pre></div>
+<p>Notice how the variable <code>brother</code> is now defined from <em>within the function</em>?<br>
+This means it is now a local variable and can only be accessed from within that function.</p>
+<h4><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions#memory-usage" aria-hidden="true" class="anchor" id="user-content-memory-usage"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Memory Usage</h4>
+<p>Another difference between global and local variables is the use of memory.</p>
+<p>Every variable takes up memory. The more memory our script requires, the slower our web page.</p>
+<p>Let's take a look at how local and global variables use memory differently.</p>
+<h5><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions#local-variables-1" aria-hidden="true" class="anchor" id="user-content-local-variables-1"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Local Variables</h5>
+<p>The interpreter creates local variables when it runs a function, and removes them right after that function finishes running.</p>
+<h5><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions#global-variables-1" aria-hidden="true" class="anchor" id="user-content-global-variables-1"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Global Variables</h5>
+<p>Global variables, on the other hand, are stored in the processor's memory for as long as the page is loaded in the browser.</p>
+<p>As a result, global variables can be inefficient, because they will continue to take up memory space even when they are not actually in use.</p>
+<p><a href="./sf-wdi-45_js-functions_files/Slide-13-Global-vs-Local.svg" target="_blank"><img src="./sf-wdi-45_js-functions_files/Slide-13-Global-vs-Local.svg" width="500px" style="max-width:100%;"></a></p>
+<br>
+<blockquote>
+<p>For JavaScript (before JavaScript 2015), local variables are scoped by their enclosing function. JavaScript 2015 is introducing lexical scope for variables declared with the <code>let</code> keyword.</p>
+</blockquote>
+
+<h4><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions#check-turn-and-talk" aria-hidden="true" class="anchor" id="user-content-check-turn-and-talk"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Check: Turn and Talk</h4>
+<p>Turn to a partner and discuss the following:</p>
+<ol>
+<li>Summarize the difference between global and local variables (bonus: think of an analogy!).</li>
+<li>When would you want to use a global variable? A local variable?</li>
+</ol>
+<h4><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions#naming-conflicts" aria-hidden="true" class="anchor" id="user-content-naming-conflicts"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Naming Conflicts</h4>
+<p>As you begin coding, you'll find that a typical project can contain thousands of lines of code.</p>
+<p>When working on a project with several developers, there is a high probability that two developers might use the same name for variables, which will result in a naming conflict.</p>
+<p>You can imagine how easy it can be to accidentally give two variables the same name and overwrite the value of one with the other.</p>
+<h5><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions#avoiding-naming-conflicts-by-using-local-variables" aria-hidden="true" class="anchor" id="user-content-avoiding-naming-conflicts-by-using-local-variables"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Avoiding naming conflicts by using local variables</h5>
+<p>Luckily, by declaring local variables, we are able to avoid these kinds of naming collisions.</p>
+<p>As local variables are created when a function runs, and then deleted from memory right after that function stops running, two different functions can use local variables with the same name without any sort of naming conflict.</p>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> <span class="pl-en">sayHello</span> <span class="pl-k">=</span> <span class="pl-k">function</span>() {
+  <span class="pl-k">var</span> sister <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>Jane<span class="pl-pds">"</span></span>; <span class="pl-c"><span class="pl-c">//</span> this is created when function runs, deleted immediately after</span>
+  <span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-s"><span class="pl-pds">"</span>Hello <span class="pl-pds">"</span></span> <span class="pl-k">+</span> sister);
+};
+
+<span class="pl-k">var</span> <span class="pl-en">sayGoodbye</span> <span class="pl-k">=</span> <span class="pl-k">function</span>() {
+  <span class="pl-k">var</span> sister <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>Sue<span class="pl-pds">"</span></span>; <span class="pl-c"><span class="pl-c">//</span> this is created when function runs, deleted immediately after</span>
+  <span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-s"><span class="pl-pds">"</span>Goodbye <span class="pl-pds">"</span></span> <span class="pl-k">+</span> sister);
+};</pre></div>
+<h5><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions#global-variables-and-naming-conflicts" aria-hidden="true" class="anchor" id="user-content-global-variables-and-naming-conflicts"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Global Variables and Naming Conflicts</h5>
+<p>Conversely, when using global variables, our variables are stored in memory as long as a web page is loaded. This makes it easy to accidentally overwrite the value of one variable with another.</p>
+<p>For example:</p>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> sister <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>Jane<span class="pl-pds">"</span></span>;
+<span class="pl-k">var</span> <span class="pl-en">sayHello</span> <span class="pl-k">=</span> <span class="pl-k">function</span>() {
+  <span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-s"><span class="pl-pds">"</span>Hello <span class="pl-pds">"</span></span> <span class="pl-k">+</span> sister);
+}
+
+<span class="pl-c"><span class="pl-c">//</span> Later in our script...</span>
+
+<span class="pl-k">var</span> sister <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>Sue<span class="pl-pds">"</span></span>; <span class="pl-c"><span class="pl-c">//</span> Oops! We forgot that we already had a variable sister and we overwrote it here.</span>
+<span class="pl-k">var</span> <span class="pl-en">sayGoodbye</span> <span class="pl-k">=</span> <span class="pl-k">function</span>() {
+  <span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-s"><span class="pl-pds">"</span>Goodbye <span class="pl-pds">"</span></span> <span class="pl-k">+</span> sister);
+}</pre></div>
+<p><a name="user-content-write-functions"></a></p>
+<h2><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions#independent-practice---write-some-functions" aria-hidden="true" class="anchor" id="user-content-independent-practice---write-some-functions"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Independent Practice - Write some functions</h2>
+<p>Work through as many of these exercises as you can within the next 10 mins.</p>
+<ol>
+<li>
+<p>Write a function <code>lengths</code> that accepts a single parameter as an argument, namely an array of strings. The function should return an array of numbers, where each number is the length of the corresponding string.</p>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> words <span class="pl-k">=</span> [<span class="pl-s"><span class="pl-pds">"</span>hello<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>what<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>is<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>up<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>dude<span class="pl-pds">"</span></span>]
+<span class="pl-en">lengths</span>(words)  # <span class="pl-k">=&gt;</span> [<span class="pl-c1">5</span>, <span class="pl-c1">4</span>, <span class="pl-c1">2</span>, <span class="pl-c1">2</span>, <span class="pl-c1">4</span>]</pre></div>
+</li>
+<li>
+<p>Write a JavaScript function called <code>transmogrifier.</code> This function should accept three arguments, which you can assume will be numbers. Your function should return the "transmogrified" result.</p>
+<p>The transmogrified result of three numbers is the product of the first two numbers, raised to the power of the third number.</p>
+<p>For example, the transmogrified result of 5, 3, and 2 is <code>(5 times 3) to the power of 2,</code> which will evaluate to 225. Use your function to find the following answers.</p>
+<div class="highlight highlight-source-js"><pre><span class="pl-en">transmogrifier</span>(<span class="pl-c1">5</span>, <span class="pl-c1">4</span>, <span class="pl-c1">3</span>)
+<span class="pl-en">transmogrifier</span>(<span class="pl-c1">13</span>, <span class="pl-c1">12</span>, <span class="pl-c1">5</span>)
+<span class="pl-en">transmogrifier</span>(<span class="pl-c1">42</span>, <span class="pl-c1">13</span>, <span class="pl-c1">7</span>)
+</pre></div>
+</li>
+<li>
+<p>Write a function <code>wordReverse</code> that accepts a single argument, a string. The method should return a string with the order of the words reversed. Don't worry about punctuation.</p>
+<div class="highlight highlight-source-js"><pre><span class="pl-en">wordReverse</span>(<span class="pl-s"><span class="pl-pds">"</span>Now I know what a TV dinner feels like<span class="pl-pds">"</span></span>)
+<span class="pl-c"><span class="pl-c">//</span> =&gt; "like feels dinner TV a what know I Now"</span>
+<span class="pl-en">wordReverse</span>(<span class="pl-s"><span class="pl-pds">"</span>Put Hans back on the line<span class="pl-pds">"</span></span>)
+<span class="pl-c"><span class="pl-c">//</span> =&gt; "line the on back Hans Put"</span></pre></div>
+</li>
+</ol>
+<p><a name="user-content-conclusion"></a></p>
+<h2><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions#conclusion" aria-hidden="true" class="anchor" id="user-content-conclusion"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Conclusion</h2>
+<p>In this lesson, we discussed a key concept of programming — <strong>Don't Repeat Yourself</strong>. Our goal is to craft our programs in as few lines of code as possible, while still being clear.</p>
+<p>By using functions we can group steps, create code that is reusable, and easily store steps.</p>
+<p>Watch this short <a href="https://generalassembly.wistia.com/medias/iv72hmwzam" rel="nofollow">video</a> with a case study from a real-life developer on when he would use functions.</p>
+<p>In the next lesson, you'll learn more about objects, a key to making JS much more efficient. Objects will take your JS programming skills to a whole new level.</p>
+<hr>
+<h3><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions#additional-resources" aria-hidden="true" class="anchor" id="user-content-additional-resources"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ADDITIONAL RESOURCES</h3>
+<ul>
+<li>Examples
+<ul>
+<li>More <a href="https://git.generalassemb.ly/sf-wdi-45/js-functions/blob/master/examples/functions_examples.md">examples</a> of functions, return statements, and scope. (Great for review or instructor use)</li>
+</ul>
+</li>
+<li>Exercises
+<ul>
+<li><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions/blob/master/exercises/google-shopping-functions">Google Shopping Functions Lab</a> (Advanced)</li>
+<li><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions/blob/master/exercises/functions_quiz">Functions Quiz</a></li>
+</ul>
+</li>
+<li>Videos
+<ul>
+<li>GA JS Circuit - <a href="https://generalassembly.wistia.com/medias/iv72hmwzam" rel="nofollow">Case study: Using Functions</a></li>
+<li>GA JS Circuit - <a href="https://generalassembly.wistia.com/medias/qmhj5hv27i" rel="nofollow">Functions Analogy - Game Plays</a></li>
+<li>GA JS Circuit - <a href="https://generalassembly.wistia.com/medias/nz5zkq96je" rel="nofollow">Functions Use Case - Site Sale</a></li>
+</ul>
+</li>
+<li>Readings</li>
+<li>Decks
+<ul>
+<li><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions/blob/master/lessons/scope_beg.md">Scope Lesson</a> with examples and quiz questions (For beg/med groups)</li>
+<li><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions/blob/master/lessons/scope_med.md">Scope Lesson</a> with many examples (For intermediate groups)</li>
+<li><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions/blob/master/lessons/scope.md">Scope Lesson</a> (For more advanced groups)</li>
+<li><a href="https://git.generalassemb.ly/sf-wdi-45/js-functions/blob/master/lessons/functions_advanced">Timing Functions / Callbacks Lesson</a> (For more advanced groups)</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>Instructor Note: When possible, provide a brief description of Additional Resources, classifying whether they are for advanced or beginner students.</p>
+</blockquote>
+</article>
+  </div>
+
+
+  </div>
+  <div class="modal-backdrop js-touch-events"></div>
+</div>
+
+    </div>
+  </div>
+
+  </div>
+
+      
+<div class="footer container-lg px-3" role="contentinfo">
+  <div class="position-relative d-flex flex-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <ul class="list-style-none d-flex flex-wrap ">
+      <li class="mr-3">© 2018 <span title="0.19201s from localhost">GitHub</span>, Inc.</li>
+        <li class="mr-3"><a href="https://help.github.com/enterprise/2.13">Help</a></li>
+          <li class="mr-3"><a href="mailto:github@generalassemb.ly">Support</a></li>
+    </ul>
+
+    <a href="https://git.generalassemb.ly/" aria-label="Homepage" class="footer-octicon" title="GitHub Enterprise Version 2.13.1">
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+</a>
+   <ul class="list-style-none d-flex flex-wrap ">
+      <li class="mr-3"><a href="https://developer.github.com/enterprise/2.13" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li class="mr-3"><a href="https://training.github.com/" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li class="mr-3"><a href="https://shop.github.com/" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li class="mr-3"><a href="https://github.com/blog">Blog</a></li>
+        <li><a href="https://github.com/about">About</a></li>
+
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light">GitHub Enterprise 2.13.1</span>
+  </div>
+</div>
+
+
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+    <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"></path></svg>
+    <button type="button" class="flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+      <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"></path></svg>
+    </button>
+    You can't perform that action at this time.
+  </div>
+
+
+    
+    <script crossorigin="anonymous" integrity="sha512-ayq/dv5ggrTCJCGJ3tUwJSkbgdCXSV0/Vd014mYmtEkp2VUu+FbmFS9l5LYzOHfDIRF9MoSKhcbzc4sYWZ3RiA==" src="./sf-wdi-45_js-functions_files/frameworks-6b2abf76fe60.js" type="application/javascript"></script>
+    
+    <script async="async" crossorigin="anonymous" integrity="sha512-io8R23TqVClsqxhHXa6ODwWbKvuNcz1vnFpSHTTFjcDmUp6k/qFdzh4vEc1OCi5Y42ST882p/F4KUd73u5F0fg==" src="./sf-wdi-45_js-functions_files/github-8a8f11db74ea.js" type="application/javascript"></script>
+    
+    
+    
+    
+  <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner d-none">
+    <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"></path></svg>
+    <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="https://git.generalassemb.ly/sf-wdi-45/js-functions">Reload</a> to refresh your session.</span>
+    <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="https://git.generalassemb.ly/sf-wdi-45/js-functions">Reload</a> to refresh your session.</span>
+  </div>
+  <div class="facebox" id="facebox" style="display:none;">
+  <div class="facebox-popup">
+    <div class="facebox-content" role="dialog" aria-labelledby="facebox-header" aria-describedby="facebox-description">
+    </div>
+    <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">
+      <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"></path></svg>
+    </button>
+  </div>
+</div>
+
+  
+
+  
+
+
+</body></html>
